@@ -1,0 +1,28 @@
+.primary-color{
+   -fx-background-color: #6C63FF;
+}
+.secondary-color{
+   -fx-background-color: #FFFFFF;
+}
+.button{
+   -fx-background-color: #6C63FF;
+   -fx-background-radius: 30;
+}
+.button:hover{
+   -fx-background-color: #FFFFFF;
+   -fx-text-fill: #6C63FF;
+}
+.text-input{
+   -fx-background-color: #6C63FF;
+   -fx-border-width: 0 0 2 0;
+   -fx-border-color: #FFFFFF;
+   -fx-text-inner-color: #FFFFFF;
+}
+.selected-border{
+   -fx-border-color: #FFFFFF;
+   -fx-border-width: 0 3 0 0;
+}
+.selected:hover{
+   -fx-background-color: #FFFFFF;
+   -fx-text-fill: #FFC0CB;
+}

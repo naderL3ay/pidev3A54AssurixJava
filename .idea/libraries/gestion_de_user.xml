@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gestion-de-user">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/gestion-de-user.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
