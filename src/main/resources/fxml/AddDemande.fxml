@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="bord" prefHeight="600.0" prefWidth="970.0" style="-fx-background-color: #fbf3e4;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddDemandeController">
+
+    <children>
+        <Pane layoutX="62.0" layoutY="11.0" prefHeight="578.0" prefWidth="812.0" style="-fx-background-radius: 15; -fx-background-color: white;">
+            <children>
+                <Label layoutX="245.0" layoutY="36.0" text="Ajouter une demande">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btnSignup" layoutX="493.0" layoutY="470.0" mnemonicParsing="false" onAction="#addDemande" prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: #4b3e3e; -fx-background-radius: 8;" text="Ajouter" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="nom_vic" layoutX="34.0" layoutY="173.0" prefHeight="50.0" prefWidth="295.0" promptText="Saisir votre nom &amp; prénom" style="-fx-background-radius: 7;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="prenomLabel" layoutX="443.0" layoutY="289.0" prefHeight="27.0" prefWidth="236.0" textFill="RED">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="adresseLabel" layoutX="443.0" layoutY="393.0" prefHeight="27.0" prefWidth="236.0" textFill="RED">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="confirmPasswordLabel" layoutX="511.0" layoutY="432.0" prefHeight="27.0" prefWidth="285.0" textFill="RED">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="price" layoutX="19.0" layoutY="123.0">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="num_con" layoutX="40.0" layoutY="278.0" prefHeight="50.0" prefWidth="295.0" promptText="Entrez le num de constat" style="-fx-background-radius: 7;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="localisation" layoutX="40.0" layoutY="368.0" prefHeight="50.0" prefWidth="295.0" promptText="Entrez la loclaisation" style="-fx-background-radius: 7;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="Qty" layoutX="41.0" layoutY="130.0" text="Nom et prénom">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="Status" layoutX="45.0" layoutY="340.0" text="Localisation">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+                <ComboBox fx:id="user_id" layoutX="375.0" layoutY="198.0" prefWidth="150.0" promptText="Selectionner user" />
+            <Label fx:id="Qty1" layoutX="34.0" layoutY="238.0" text="Num de constat ">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="Status1" layoutX="40.0" layoutY="431.0" text="Etat demande">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="Qty2" layoutX="385.0" layoutY="159.0" text="User_id">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="406.0" layoutY="381.0" mnemonicParsing="false" onAction="#LocaliserIncident" styleClass="mainFxmlClass" text="Localiser l'incident">
+               <stylesheets>
+                  <URL value="@guiViewTable.css" />
+                  <URL value="@guilogin.css" />
+               </stylesheets>
+            </Button>
+                <ComboBox fx:id="etat_de" layoutX="37.0" layoutY="458.0" prefHeight="50.0" prefWidth="275.0" promptText="L'état">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="traité" />
+                            <String fx:value="non traité" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>            </children>
+        </Pane>
+        <ImageView fx:id="btnReturn" fitHeight="44.0" fitWidth="48.0" layoutX="14.0" layoutY="20.0" onMouseClicked="#returnTo" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/return.png" />
+            </image>
+        </ImageView>
+
+    </children>
+
+</AnchorPane>
